@@ -1,7 +1,11 @@
 <template>
     <div class="home">
-        <h1>Hello Home</h1>
+        <Header />
+        <Navbar />
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Header from '../components/header.vue';
+import Navbar from '../components/navbar.vue';
+</script>

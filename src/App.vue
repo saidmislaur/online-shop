@@ -4,15 +4,33 @@
   <main>
     <nav>
       <RouterLink to="/">Главная</RouterLink>
-      |
-      <RouterLink to="/about">О нас</RouterLink>
     </nav>
 
     <RouterView />
   </main>
 </template>
 
-<style scoped>
+<style lang="scss">
+.fashion-store {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: $primary-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
 header {
   line-height: 1.5;
 }
