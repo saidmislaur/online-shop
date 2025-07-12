@@ -55,13 +55,6 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss">
-$primary-color: #000;
-$secondary-color: #666;
-$accent-color: #ff6b6b;
-$light-gray: #f8f8f8;
-$white: #fff;
-$border-color: #e0e0e0;
-
 .container {
     max-width: 1200px;
     margin: 0 auto;

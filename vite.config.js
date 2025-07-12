@@ -12,6 +12,9 @@ export default defineConfig({
       scss: {
         additionalData: `@import "@/styles/_variables.scss";`,
       },
+      css: {
+        additionalData: `@import "@/styles/main.css";`,
+      },
     },
   },
   resolve: {
