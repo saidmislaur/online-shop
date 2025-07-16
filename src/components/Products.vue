@@ -1,13 +1,12 @@
 <template>
     <section class="products">
         <div class="container">
-            <div class="products__header">
-                <h2 class="section-title">Популярные товары</h2>
+            <Card :productsProducts="productsProducts" />
+            <div class="products__button">
                 <BaseButton variant="outline" size="large">
                     Смотреть все
                 </BaseButton>
             </div>
-            <Card :productsProducts="productsProducts" />
         </div>
     </section>
 </template>
@@ -20,26 +19,19 @@ import Card from './Card.vue'
 const productsProducts = ref([
     {
         id: 1,
-        name: 'Худи',
-        price: 8990,
-        oldPrice: 12990,
-        image: 'https://m.sportkult.ru/ipreview/goods/820/820/845538_8648_010_single_.png'
+        name: 'Спортивные штаны',
+        price: 15990,
+        image: 'https://footboxshop.ru/upload/resize_cache/iblock/aa5/1500_1500_2/kzudzx6p7ehqpe5svvrawo3vdqm4wv2k.jpg'
     },
     {
         id: 2,
-        name: 'Спортивные штаны',
-        price: 15990,
-        image: 'https://www.lookbuck.com/system/products/items/images/012/546/016/small/image1xxl.jpg?1507572600'
-    },
-    {
-        id: 3,
         name: 'Стильные джинсы',
         price: 6990,
         oldPrice: 8990,
-        image: 'https://mega-jeans.ru/image/cache/catalog/72A-SOSF-500x500.jpg'
+        image: 'https://brand-centr.com/image/cache/catalog/%20-1-1732808038-1500x1500.jpg'
     },
     {
-        id: 4,
+        id: 3,
         name: 'Кожаная куртка',
         price: 12990,
         image: 'https://static.shuclothes.com/sig/size:8192/aHR0cHM6Ly9zaHVjbG90aGVzLmNvbS9zdG9yYWdlLzIzNzk3L9C60L7RgNC-0YLQutCw0Y9f0LbQtdC90YHQul_Rh9C10YDQvTA2NDMuanBn'
@@ -52,9 +44,9 @@ const productsProducts = ref([
     padding: 5rem 0;
     background: $light-gray;
 
-    &__header {
-        @include flex-between;
-        margin-bottom: 3rem;
+    &__button {
+        text-align: center;
+        margin-top: 30px;
     }
 }
 

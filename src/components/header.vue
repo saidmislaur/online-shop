@@ -3,7 +3,9 @@
         <div class="container">
             <div class="header__content">
                 <div class="header__logo">
-                    <h1>LUXE</h1>
+                    <RouterLink to="/">
+                        <h1>LUXE</h1>
+                    </RouterLink>
                 </div>
                 <div class="header__actions">
                     <transition name="fade">
@@ -18,7 +20,7 @@
                     </button>
                     <button class="icon-btn cart-btn">
                         <ShoppingBag :size="20" />
-                        <span class="cart-count">3</span>
+                        <span class="cart-count"></span>
                     </button>
                 </div>
             </div>
@@ -29,7 +31,9 @@
 <script setup lang="ts">
 import { Search, User, ShoppingBag, Instagram, Facebook, Twitter } from 'lucide-vue-next'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
 
+const router = useRouter()
 
 const showSearch = ref(false)
 const searchValue = ref('')
@@ -91,6 +95,8 @@ onBeforeUnmount(() => {
             font-size: 1.8rem;
             font-weight: 300;
             letter-spacing: 2px;
+            cursor: pointer;
+            text-decoration: none;
         }
     }
 

@@ -15,14 +15,14 @@
 <script setup>
 import { ref } from 'vue'
 
-const navLists = ['Футболки', 'Свитшоты', 'Худи', 'Куртки', 'Брюки', 'Джинсы']
-const activeItem = ref('Футболки')
+const navLists = ['Все', 'Футболки', 'Свитшоты', 'Худи', 'Куртки', 'Брюки', 'Джинсы']
+const activeItem = ref('Все')
 </script>
 <style lang="scss">
 .navbar {
     margin-top: 50px;
     padding: 10px;
-    background-color: rgb(245, 235, 222);
+    background-color: rgb(189, 187, 187);
 
     &__nav {
 
@@ -32,6 +32,7 @@ const activeItem = ref('Футболки')
 
             li {
                 font-size: 20px;
+                text-transform: uppercase;
             }
         }
     }
@@ -45,14 +46,14 @@ const activeItem = ref('Футболки')
         cursor: pointer;
 
         &:hover {
-            color: $accent-color;
+            color: #fbfbfb;
         }
     }
 
     .active {
-        color: $accent-color;
+        color: #fbfbfb;
         font-weight: bold;
-        border-bottom: 2px solid $accent-color;
+        border-bottom: 2px solid #fbfbfb;
     }
 }
 </style>

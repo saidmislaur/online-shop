@@ -31,6 +31,7 @@ const props = defineProps({
     overflow: hidden;
     transition: transform 0.3s ease;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
 
     &:hover {
         transform: translateY(-3px);
