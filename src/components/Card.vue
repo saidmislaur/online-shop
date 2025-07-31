@@ -1,18 +1,15 @@
 <template>
-    <div class="products__grid">
-        <div v-for="product in productsProducts" :key="product.id" class="product-card">
-            <div class="product-card__image">
-                <img :src="product.image" :alt="product.name" />
-                <div class="product-card__overlay">
-                    <button class="btn btn--small">Быстрый просмотр</button>
-                </div>
+    <div class="product-card">
+        <div class="product-card__image">
+            <img :src="image" :alt="name" />
+            <div class="product-card__overlay">
+                <button class="btn btn--small">Быстрый просмотр</button>
             </div>
-            <div class="product-card__content">
-                <h3 class="product-card__name">{{ product.name }}</h3>
-                <div class="product-card__price">
-                    <span v-if="product.oldPrice" class="old-price">{{ product.oldPrice }}₽</span>
-                    <span class="current-price">{{ product.price }}₽</span>
-                </div>
+        </div>
+        <div class="product-card__content">
+            <h3 class="product-card__name">{{ name }}</h3>
+            <div class="card__price">
+                <span class="current-price">{{ price }}₽</span>
             </div>
         </div>
     </div>
@@ -20,7 +17,11 @@
 
 <script setup lang="ts">
 const props = defineProps({
-    productsProducts: Array<any>
+    products: Array<any>,
+    name: String,
+    price: Number,
+    image: String,
+    category: String
 })
 </script>
 

@@ -2,7 +2,7 @@
     <div class="home">
         <Header />
         <Navbar />
-        <Products />
+        <Category />
         <About />
         <Footer />
     </div>
@@ -12,11 +12,11 @@
 import Header from '../components/Header.vue';
 import Navbar from '../components/Navbar.vue';
 import Footer from '../components/Footer.vue';
-import Products from '../components/Products.vue';
+import Category from '../components/Category.vue';
 import About from '../components/About.vue';
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 * {
     font-family: 'Roboto', sans-serif;
     font-optical-sizing: auto;
