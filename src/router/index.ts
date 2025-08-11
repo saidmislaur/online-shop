@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import RegisterView from '../views/RegisterView.vue';
+import Registration from '../components/Authorization/Registration.vue';
 import CardDetail from '../components/CardDetail/CardDetail.vue';
 import Products from '../components/Products.vue';
 
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/register',
     name: 'Register',
-    component: RegisterView,
+    component: Registration,
   },
   {
     path: '/card:id',
